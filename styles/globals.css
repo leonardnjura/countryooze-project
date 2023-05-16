@@ -1,0 +1,372 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .my-btn {
+    @apply duo p-2 px-4 py-2.5 my-2 border border-zinc-700 sm:px-6 text-xs sm:text-sm bg-zinc-900 dark:bg-zinc-700 hover:bg-blue-700 rounded text-white focus:ring-4 focus:outline-none focus:ring-slate-600;
+  }
+}
+
+@layer components {
+  .my-btn-hot {
+    @apply my-btn hover:bg-red-600;
+  }
+}
+
+@layer components {
+  .my-select {
+    @apply bg-zinc-50 pr-2 my-2 border border-zinc-700 text-zinc-900 text-sm rounded focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-zinc-700 dark:border-zinc-600 dark:placeholder-zinc-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500;
+  }
+}
+
+@layer components {
+  .my-link-nav {
+    @apply text-zinc-900 dark:text-zinc-500 hover:text-blue-700 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-link-nav-bold {
+    @apply my-link-nav sweet-bold;
+  }
+}
+
+@layer components {
+  .my-link-nav-error {
+    @apply my-link-nav hover:text-red-600;
+  }
+}
+
+@layer components {
+  .my-link {
+    @apply duo text-zinc-500 dark:text-zinc-600 hover:text-blue-700 dark:hover:text-zinc-50 cursor-pointer;
+  }
+}
+
+@layer components {
+  .teaser-link {
+    @apply my-link;
+  }
+}
+
+@layer components {
+  .dotted {
+    @apply underline decoration-dotted hover:decoration-transparent;
+  }
+}
+
+@layer components {
+  .my-link-dotted {
+    @apply my-link dotted;
+  }
+}
+
+@layer components {
+  .my-link-cursor {
+    @apply my-link  cursor-text;
+  }
+}
+
+@layer components {
+  .my-link-dotted-cursor {
+    @apply my-link-dotted cursor-text;
+  }
+}
+
+@layer components {
+  .my-link-underline {
+    @apply my-link hover:underline;
+  }
+}
+
+@layer components {
+  .tooltip-header {
+    @apply font-extrabold text-lg sm:text-xl text-yellow-600;
+  }
+}
+
+@layer components {
+  .tooltip-header-link {
+    @apply tooltip-header  text-yellow-600 hover:underline  hover:text-zinc-500 cursor-pointer;
+  }
+}
+
+@layer components {
+  .sub-header {
+    @apply font-extrabold text-lg sm:text-xl;
+  }
+}
+
+@layer components {
+  .cite-header {
+    @apply font-extrabold;
+  }
+}
+
+@layer components {
+  .tooltip-link {
+    @apply dotted decoration-zinc-400 hover:text-blue-600 cursor-pointer;
+  }
+}
+
+@layer components {
+  .tooltip-link-attribution {
+    @apply tooltip-link hover:text-red-600;
+  }
+}
+
+@layer components {
+  .my-link-silent {
+    @apply my-link hover:underline  hover:text-zinc-500 dark:text-zinc-600;
+  }
+}
+
+@layer components {
+  .my-page {
+    @apply flex flex-col gap-y-5 w-80 sm:w-128 my-text pb-16;
+  }
+}
+
+@layer components {
+  .my-page-full {
+    @apply my-page sm:w-160;
+  }
+}
+
+@layer components {
+  .my-text {
+    @apply duo text-zinc-900 dark:text-zinc-500 text-xs sm:text-sm;
+  }
+}
+
+@layer components {
+  .my-text-high-contrast {
+    @apply duo text-zinc-900 dark:text-white text-xs sm:text-sm;
+  }
+}
+
+@layer components {
+  .my-text-high-contrast-lg {
+    @apply my-text-high-contrast text-xl sm:text-2xl;
+  }
+}
+
+@layer components {
+  .my-text-high-contrast-xl {
+    @apply my-text-high-contrast text-4xl sm:text-5xl;
+  }
+}
+
+@layer components {
+  .my-page-title {
+    @apply duo-medium leading-tight text-2xl sm:text-4xl mt-0 mb-2 text-blue-600;
+  }
+}
+
+@layer components {
+  .my-page-title-lg {
+    @apply my-page-title text-4xl sm:text-5xl;
+  }
+}
+
+@layer components {
+  .my-logo-title {
+    @apply my-page-title text-zinc-900;
+  }
+}
+
+@layer components {
+  .my-sub-title {
+    @apply text-gray-900 dark:text-white duo-medium;
+  }
+}
+
+@layer components {
+  .my-link-hot {
+    @apply text-zinc-900 dark:text-zinc-700 hover:text-red-600 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-link-high-contrast {
+    @apply text-zinc-900 dark:text-zinc-700 hover:text-slate-500 dark:hover:text-zinc-50;
+  }
+}
+
+@layer components {
+  .yello {
+    @apply text-yellow-500 dark:text-yellow-700;
+  }
+}
+
+@layer components {
+  .my-loading {
+    @apply text-zinc-900 dark:text-zinc-700 hover:text-slate-500 dark:hover:text-zinc-50 font-extrabold my-2;
+  }
+}
+
+@layer components {
+  .my-rule {
+    @apply border-t-zinc-200 dark:border-t-zinc-700;
+  }
+}
+
+@layer components {
+  .my-vrule {
+    @apply my-page-title border-r-2 pl-2 pr-2 border-zinc-200 dark:border-zinc-700;
+  }
+}
+
+@layer components {
+  .my-vrule-text {
+    @apply text-base pl-2 pb-2;
+  }
+}
+
+@layer components {
+  .my-border {
+    @apply border border-zinc-100 dark:border-zinc-600;
+  }
+}
+
+@layer components {
+  .my-popsicle {
+    @apply inline-block bg-zinc-200 dark:bg-zinc-600 rounded-full px-3 py-1 text-xs font-semibold text-zinc-700 dark:text-zinc-900 mr-2 mb-2 font-mono;
+  }
+}
+
+@layer components {
+  .my-popsicle-link {
+    @apply hover:text-blue-600 dark:hover:text-slate-400 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-down {
+    @apply text-blue-600 dark:text-slate-400 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-down-hotpink {
+    @apply text-red-400;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-down-green {
+    @apply text-green-600;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-hot {
+    @apply hover:text-blue-600 dark:hover:text-red-400 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-hot-down {
+    @apply text-blue-600 dark:text-red-400 cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-variant {
+    @apply dark:text-slate-400 hover:text-blue-600 dark:hover:text-slate-200;
+  }
+}
+
+@layer components {
+  .my-popsicle-link-search {
+    @apply my-popsicle my-popsicle-link-variant cursor-pointer;
+  }
+}
+
+@layer components {
+  .my-card {
+    @apply px-6 pt-4  pb-2 mb-5 bg-gradient-to-r from-slate-50  to-slate-50  dark:from-slate-800  dark:to-slate-800 shadow-sm rounded-tl-md rounded-tr-md rounded-bl-md rounded-br-md;
+  }
+}
+
+@layer components {
+  .nil {
+    @apply text-zinc-300 dark:text-zinc-700 hover:text-red-600 text-xs sm:text-xs;
+  }
+}
+
+@layer components {
+  .text-danger {
+    @apply text-red-600 hover:text-zinc-700 text-xs sm:text-xs text-left pl-3;
+  }
+}
+
+@layer components {
+  .cite {
+    @apply text-zinc-300 dark:text-zinc-700 hover:text-red-600 text-xs sm:text-xs uppercase font-extralight;
+  }
+}
+
+@layer components {
+  .cite-spacer {
+    @apply pt-8;
+  }
+}
+
+@layer components {
+  .faded-link {
+    @apply cite dark:text-zinc-300;
+  }
+}
+
+@layer components {
+  .resposta {
+    @apply font-extrabold font-mono;
+  }
+}
+
+@layer components {
+  .sweet-bold {
+    @apply duo-medium;
+  }
+}
+
+@layer components {
+  .sweet-bolder {
+    @apply duo-medium font-extrabold;
+  }
+}
+
+@layer components {
+  .yello {
+    color: yellow;
+  }
+}
+
+@font-face {
+  font-family: 'font-din';
+  src: url('/fonts/din-next-rounded.ttf');
+}
+
+.duo {
+  font-family: 'font-din';
+}
+
+@font-face {
+  font-family: 'font-din-medium';
+  src: url('/fonts/din-next-rounded-medium.ttf');
+}
+
+.duo-medium {
+  font-family: 'font-din-medium';
+}
+
+@font-face {
+  font-family: 'font-nunito';
+  src: url('/fonts/nunito.ttf');
+}
+
+.nunito {
+  font-family: 'font-nunito';
+}
